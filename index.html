@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">YouTube</div>
+    <input id="searchInput" type="text" placeholder="Search" class="search-bar" />
+    <button class="search-btn" onclick="searchVideos()">🔍</button>
+    <button class="create-btn" onclick="openModal()">Create Account</button>
+    <button class="create-btn" onclick="openVideoModal()">Create Video</button>
+  </header>
+
+  <main class="main-content">
+    <p id="notFound" class="not-found" style="display: none;">🚫 Video not found</p>
+    <section id="videoGrid" class="video-grid">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Never Gonna Give You Up</h4>
+          <p>Rick Astley • 1B views • 13 years ago</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Gangnam Style</h4>
+          <p>PSY • 4B views • 12 years ago</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>See You Again</h4>
+          <p>Wiz Khalifa • 5B views • 8 years ago</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=L_jWHffIx5E" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/L_jWHffIx5E/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Smells Like Teen Spirit</h4>
+          <p>Nirvana • 1.3B views • 14 years ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=t8HrZTLRCeU" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/t8HrZTLRCeU/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Employee No.1 - Standup Comedy by Abhishek Upmanyu | Story</h4>
+          <p> Abhishek Upmanyu • 31M views • 1 years ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=gR2jLvyP-g8" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/gR2jLvyP-g8/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Story time : I met a serial killer on my solo trip to Goa</h4>
+          <p> The Rebel Kid • 4.1M views • 5 months ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=a7fzkqLozwA" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/a7fzkqLozwA/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+Lauv - I Like Me Better [Official Audio]</h4>
+          <p> Lauv • 411M views • 7 years ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=ekr2nIex040" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/ekr2nIex040/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>ROSÉ & Bruno Mars - APT. (Official Music Video)</h4>
+          <p>ROSÉ • 1.6B views • 6 months ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=pRpeEdMmmQ0" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/pRpeEdMmmQ0/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)</h4>
+          <p> Shakira • 4.2B views • 14 years ago</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=ycS5PagXvhQ" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/ycS5PagXvhQ/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir</h4>
+          <p> SonyMusicIndiaVEVO • 62M views • 11 years ago</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=Ivp_G8uE_P4" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/Ivp_G8uE_P4/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+Multi Messenger Astronomy - A New Era of Discovery – Part-1 – [Hindi] – Infinity Stream</h4>
+          <p> Infinity Stream • 29k views • 3 weeks ago</p>
+        </div>
+      <a href="https://www.youtube.com/watch?v=YR12Z8f1Dh8 " target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/YR12Z8f1Dh8/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+3 - Why This Kolaveri Di Official Video | Dhanush | Anirudh Ravichander | Shruti Haasan</h4>
+          <p> 
+Sony Music South • 524M views • 13 years ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=mJDuxEhcB_c" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/mJDuxEhcB_c/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+FilterCopy | When You Are Clumsy AF Part 2 | Ft. Devishi Madaan & DevDutt09</h4>
+          <p> FilterCopy • 3.4M views • 3 years ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=E16WhXcIghM" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/E16WhXcIghM/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+Team Animals - Stand-Up Comedy by Abhishek Upmanyu</h4>
+          <p> Abhishek Upmanyu • 38M views • 4 years ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=V0jHMoDHmZw" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/V0jHMoDHmZw/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+Wednesday: Season 2 | Official Teaser Trailer | Netflix</h4>
+          <p> Netflix India • 4.4M views • 3 weeks ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=FSAz556s0fM" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/FSAz556s0fM/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>
+The Conjuring: Last Rites | Official Teaser</h4>
+          <p> Warner Bros • 21M views • 6 days ago</p>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/VQRLujxTm3c/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Grand Theft Auto VI Trailer 2</h4>
+          <p> Rockstar Games • 107M views • 8 days ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=k0Ka-deab1s" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/k0Ka-deab1s/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Ed Sheeran & Diljit Dosanjh - Shape of You x Naina (Live in Birmingham 2024)</h4>
+          <p> Ed Sheeran • 32M views • 6 months ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=OWEq2Pf8qpk" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/OWEq2Pf8qpk/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>How To Train Your Dragon | IMAX Trailer</h4>
+          <p> Universal Pictures • 13M views • 8 days ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=RJYuFdVD9u4" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/RJYuFdVD9u4/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+         <h4>4-Year-Old Bone Expert Amazes Steve Harvey</h4>
+          <p> Little Big Shots • 2.1M views • 7 months ago</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=9GBydDR4D2k" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/9GBydDR4D2k/hqdefault.jpg" alt="Thumbnail">
+        <div class="video-info">
+          <h4>Rohit Sharma & Shreyas Iyer REVEAL These Secrets About Their Teammates | Episode 2</h4>
+          <p> Netflix India • 18M views • 7 months ago</p>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Create Account Modal -->
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm" onsubmit="handleCreateAccount(event)">
+        <input type="text" id="name" placeholder="Full Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button type="submit">Create</button>
+      </form>
+      <p id="accountMessage"></p>
+    </div>
+  </div>
+
+ <!-- Updated Create Video Modal With Camera -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Create a New Video</h2>
+
+    <label for="videoTitle">Video Title:</label>
+    <input type="text" id="videoTitle" placeholder="Enter video title" required>
+
+    <label for="videoDescription">Video Description:</label>
+    <textarea id="videoDescription" placeholder="Enter video description" required></textarea>
+
+    <br><hr>
+
+    <!-- Camera Preview + Record Controls -->
+    <h3>🎥 Record Using Camera (Optional)</h3>
+    <video id="preview" autoplay muted></video>
+    <br>
+    <button onclick="startRecording()">▶️ Start Recording</button>
+    <button onclick="stopRecording()">⏹️ Stop Recording</button>
+
+    <video id="recordedVideo" controls style="display:none; margin-top: 10px;"></video>
+    <a id="downloadLink" style="display:none;" download="my-recording.webm">⬇️ Download Recording</a>
+
+    <br><br>
+    <button onclick="createVideo()">➕ Create Video</button>
+  </div>
+</div>
+
+
+  <script>
+    function searchVideos() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const videos = document.querySelectorAll(".video-card");
+      let matchFound = false;
+
+      videos.forEach(video => {
+        const title = video.querySelector("h4").textContent.toLowerCase();
+        if (title.includes(query)) {
+          video.style.display = "block";
+          matchFound = true;
+        } else {
+          video.style.display = "none";
+        }
+      });
+
+      document.getElementById("notFound").style.display = matchFound ? "none" : "block";
+    }
+
+    function openModal() {
+      document.getElementById("accountModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("accountModal").style.display = "none";
+      document.getElementById("accountMessage").textContent = "";
+      document.getElementById("accountForm").reset();
+    }
+
+    function handleCreateAccount(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      if (name && email && password.length >= 6) {
+        document.getElementById("accountMessage").textContent = "✅ Account created successfully!";
+      } else {
+        document.getElementById("accountMessage").textContent = "❌ Please fill out all fields correctly.";
+      }
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("accountModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+    function openVideoModal() {
+  document.getElementById("videoModal").style.display = "block";
+}
+
+function closeVideoModal() {
+  document.getElementById("videoModal").style.display = "none";
+}
+
+function handleCreateVideo(event) {
+  event.preventDefault();
+  
+  const title = document.getElementById("videoTitle").value;
+  const desc = document.getElementById("videoDesc").value;
+  const videoUrl = document.getElementById("videoUrl").value;
+  const thumbUrl = document.getElementById("thumbnailUrl").value;
+
+  const videoGrid = document.getElementById("videoGrid");
+  const newCard = document.createElement("a");
+  newCard.href = videoUrl;
+  newCard.target = "_blank";
+  newCard.className = "video-card";
+  newCard.innerHTML = `
+    <img src="${thumbUrl}" alt="Thumbnail">
+    <div class="video-info">
+      <h4>${title}</h4>
+      <p>${desc}</p>
+    </div>
+  `;
+  
+  videoGrid.prepend(newCard); // add new video at top
+  document.getElementById("videoForm").reset();
+  document.getElementById("videoMessage").textContent = "🎉 Video added!";
+  closeVideoModal();
+}
+
+let mediaRecorder;
+let recordedBlobs = [];
+let stream;
+
+function openModal() {
+  document.getElementById("videoModal").style.display = "block";
+
+  // Ask for camera access
+  navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+    .then(s => {
+      stream = s;
+      document.getElementById("preview").srcObject = stream;
+    })
+    .catch(err => {
+      alert("Camera access denied or not available.");
+      console.error(err);
+    });
+}
+
+function closeModal() {
+  document.getElementById("videoModal").style.display = "none";
+  if (stream) {
+    stream.getTracks().forEach(track => track.stop());
+  }
+  resetRecording();
+}
+
+function startRecording() {
+  recordedBlobs = [];
+  mediaRecorder = new MediaRecorder(stream, { mimeType: "video/webm" });
+
+  mediaRecorder.ondataavailable = event => {
+    if (event.data && event.data.size > 0) {
+      recordedBlobs.push(event.data);
+    }
+  };
+
+  mediaRecorder.onstop = () => {
+    const videoBlob = new Blob(recordedBlobs, { type: "video/webm" });
+    const videoURL = URL.createObjectURL(videoBlob);
+
+    const recordedVideo = document.getElementById("recordedVideo");
+    recordedVideo.src = videoURL;
+    recordedVideo.style.display = "block";
+
+    const downloadLink = document.getElementById("downloadLink");
+    downloadLink.href = videoURL;
+    downloadLink.style.display = "inline";
+  };
+
+  mediaRecorder.start();
+  console.log("Recording started");
+}
+
+function stopRecording() {
+  if (mediaRecorder && mediaRecorder.state !== "inactive") {
+    mediaRecorder.stop();
+    console.log("Recording stopped");
+  }
+}
+
+function resetRecording() {
+  document.getElementById("preview").srcObject = null;
+  document.getElementById("recordedVideo").style.display = "none";
+  document.getElementById("downloadLink").style.display = "none";
+}
+
+function createVideo() {
+  const title = document.getElementById("videoTitle").value;
+  const description = document.getElementById("videoDescription").value;
+
+  if (!title || !description) {
+    alert("Please enter both title and description.");
+    return;
+  }
+
+  // If recordedBlobs has video, we can process or upload it here
+  if (recordedBlobs.length > 0) {
+    alert("Video created with recording! (You can extend this to upload video)");
+  } else {
+    alert("Video created without recording. (Only metadata submitted)");
+  }
+
+  closeModal();
+};
+
+
+  </script>
+</body>
+</html>
