@@ -1,7 +1,8 @@
 # youtube_clone
 # 🎥 YouTube Clone
 
-A simple, responsive clone of YouTube's user interface built using **HTML**, **CSS**, and **JavaScript**. This project aims to replicate the front-end design and basic functionality of YouTube to strengthen web development skills.
+A simple, responsive clone of YouTube's user interface built using **HTML**, **CSS**, and **JavaScript**.
+This project aims to replicate the front-end design and basic functionality of YouTube to strengthen web development skills.
 
 ## 🚀 Features
 
@@ -19,11 +20,8 @@ A simple, responsive clone of YouTube's user interface built using **HTML**, **C
 
 ### 🔍 Future Improvements
 Integrate with a backend (Node.js + Express + MongoDB)
-
 Add video upload and user authentication
-
 Real-time search and recommendations
-
 Comment and like system
 
 ### ✅ Conclusion
