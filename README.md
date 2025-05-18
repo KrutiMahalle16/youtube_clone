@@ -17,3 +17,11 @@ A simple, responsive clone of YouTube's user interface built using **HTML**, **C
 - **CSS3** – Styling, Flexbox, and Grid for layout
 - **JavaScript** –d interactivity
 
+### 🔍 Future Improvements
+Integrate with a backend (Node.js + Express + MongoDB)
+
+Add video upload and user authentication
+
+Real-time search and recommendations
+
+Comment and like system
