@@ -19,7 +19,8 @@ This project aims to replicate the front-end design and basic functionality of Y
 - **JavaScript** –d interactivity
 
 ### 🔍 Future Improvements
-Integrate with a backend (Node.js + Express + MongoDB)
+Integrate with a backend (Node.js + Express + MongoDB).
+
 Add video upload and user authentication
 Real-time search and recommendations
 Comment and like system
